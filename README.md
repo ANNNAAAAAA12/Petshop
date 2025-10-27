@@ -15,7 +15,7 @@ Bienvenido a PetMatch, una aplicación diseñada para ayudarte a encontrar tu co
 - Uso de la camara por parte de las fundaciones.
 - Ubicación de fundaciones cerca a los usuarios ( uso del gps )
 -Espacio para donaciones hacia la fundación ya sea para mejorar sus espacios o para ayudar con alimento, medicina, diversas necesidades de los perros en adopción. ( unicamente será una simulación ) 
-
+-Faltan por poner
 ## Tecnologías Utilizadas
 
 *   **Lenguaje:** Kotlin
