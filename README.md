@@ -5,6 +5,7 @@ Bienvenido a PetMatch, una aplicación diseñada para ayudarte a encontrar tu co
 ## by Ana Ramos y LuisBohorquez
 <img src="fotoanar.jpg" width="100">
 
+
 ##  Características Principales
 
 *   **Interfaz de Usuario Moderna:** Construida con Jetpack Compose para una experiencia fluida.
