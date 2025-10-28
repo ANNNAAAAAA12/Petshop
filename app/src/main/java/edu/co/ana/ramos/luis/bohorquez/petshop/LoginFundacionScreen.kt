@@ -28,7 +28,7 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 @Preview
 @Composable
-fun LoginUsuarioScreen() {
+fun LoginFundacionScreen() {
     Column(modifier = Modifier
         .fillMaxWidth()
         .fillMaxHeight()
