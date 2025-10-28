@@ -15,6 +15,7 @@ import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.AccountBox
 import androidx.compose.material.icons.filled.Email
+import androidx.compose.material.icons.filled.LocationOn
 import androidx.compose.material.icons.filled.Lock
 import androidx.compose.material3.Button
 import androidx.compose.material3.ButtonDefaults
@@ -39,11 +40,11 @@ import androidx.compose.runtime.remember
 import androidx.compose.runtime.setValue
 @Preview
 @Composable
-fun RegistroUsarioScreen() {
+fun RegistroFundacionScreen() {
     var nombre by remember { mutableStateOf("") }
     var email by remember { mutableStateOf("") }
     var contraseña by remember { mutableStateOf("") }
-
+    var dirección by remember { mutableStateOf("") }
     var confirmarcontraseña by remember { mutableStateOf("") }
 
 
@@ -72,7 +73,7 @@ fun RegistroUsarioScreen() {
             shape = RoundedCornerShape(50.dp),
             enabled = false,
             modifier = Modifier
-                .fillMaxWidth()
+                .size(300.dp,50.dp)
                 .padding(horizontal = 30.dp),
 
             textStyle = androidx.compose.ui.text.TextStyle(
@@ -87,7 +88,7 @@ fun RegistroUsarioScreen() {
                 disabledBorderColor = Color.Transparent
             )
         )
-        Spacer(modifier = Modifier.padding(20.dp))
+        Spacer(modifier = Modifier.padding(10.dp))
 
         //primertextfield
 
@@ -118,7 +119,7 @@ fun RegistroUsarioScreen() {
                 focusedLabelColor = Color.Black.copy(alpha = 0.7f),
                 unfocusedLabelColor = Color.Black.copy(alpha = 0.7f)
             )
-            )
+        )
 
         Spacer(modifier = Modifier.padding(20.dp))
 //segudno
@@ -152,6 +153,36 @@ fun RegistroUsarioScreen() {
             )
         )
 
+        Spacer(modifier = Modifier.padding(20.dp))
+
+        OutlinedTextField(
+            value = dirección,
+            onValueChange = { dirección = it },
+            modifier = Modifier
+                .fillMaxWidth()
+                .padding(horizontal = 30.dp),
+            label = { Text("Dirección") },
+            leadingIcon = {
+                Icon(
+                    imageVector = Icons.Default.LocationOn,
+                    contentDescription = "Direccion",
+                    tint = Color.Gray
+                )
+            },
+            singleLine = true,
+            colors = OutlinedTextFieldDefaults.colors(
+                focusedContainerColor = Color(0xFFF5ECDD),
+                unfocusedContainerColor = Color(0xFFF5ECDD),
+                disabledContainerColor = Color(0xFFF5ECDD),
+
+                cursorColor = Color.Black,
+                focusedBorderColor = Color.Transparent,
+                unfocusedBorderColor = Color.Transparent,
+
+                focusedLabelColor = Color.Black.copy(alpha = 0.7f),
+                unfocusedLabelColor = Color.Black.copy(alpha = 0.7f)
+            )
+        )
         Spacer(modifier = Modifier.padding(20.dp))
         OutlinedTextField(
             value = contraseña,
